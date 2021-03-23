@@ -15,14 +15,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_weight="0"
-            app:srcCompat="@drawable/jellyfishlogo" />
-
-        <ImageView
             android:id="@+id/imageView3"
             android:layout_width="230dp"
             android:layout_height="50dp"
@@ -100,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:enabled="true"
             android:text="Премиум аккаунт"
             android:textSize="18sp"
@@ -113,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="32dp"
             android:text="Email"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -124,8 +116,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
             android:layout_marginLeft="80dp"
-            android:layout_marginTop="20dp"
-            android:text="..."
+            android:layout_marginTop="32dp"
+            android:text="vasya@mail.com"
             app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,7 +139,7 @@
             android:layout_marginStart="80dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
-            android:text="..."
+            android:text="******"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -169,7 +161,7 @@
             android:layout_marginStart="80dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
-            android:text="..."
+            android:text="John"
             app:layout_constraintStart_toEndOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -191,7 +183,7 @@
             android:layout_marginStart="80dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
-            android:text="..."
+            android:text="Johnson"
             app:layout_constraintStart_toEndOf="@+id/textView20"
             app:layout_constraintTop_toBottomOf="@+id/textView18" />
 

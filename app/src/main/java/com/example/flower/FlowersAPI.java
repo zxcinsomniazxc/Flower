@@ -10,11 +10,11 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface FlowersAPI {
-    @GET("/user")
+    @GET("/movies?filter=new")
     Call<List<Flower>> getData();
 
     Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("http://cinema.areas.su/up/video/")
+            .baseUrl("http://cinema.areas.su/")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 

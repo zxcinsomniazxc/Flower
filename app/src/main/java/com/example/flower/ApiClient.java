@@ -1,5 +1,8 @@
 package com.example.flower;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import okhttp3.OkHttp;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -15,10 +18,11 @@ public class ApiClient {
 
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build();
 
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
         Retrofit retrofit = new Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://api.larntech.net/")
+                .baseUrl("http://cinema.areas.su")
                 .client(okHttpClient)
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
         return retrofit;

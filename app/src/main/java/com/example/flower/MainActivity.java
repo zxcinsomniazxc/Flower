@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if(intent.getExtras() != null){
             loginResponse = (LoginResponse) intent.getSerializableExtra("data");
-            Log.e("TAG", "=====>" + loginResponse.getEmail());
+
         }
 
         favwhite = (ImageView)findViewById(R.id.favwhite);

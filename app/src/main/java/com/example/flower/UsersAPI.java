@@ -13,14 +13,6 @@ public interface UsersAPI {
     @GET("auth/user")
     Call<List<Users>> getData();
 
-    Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("http://cinema.areas.su/auth/register")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build();
 
-    @POST("auth/login")
-    Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
 
-    @POST("auth/register")
-    Call<RegisterResponse> registerUsers(@Body RegisterRequest registerRequest);
 }

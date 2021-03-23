@@ -13,6 +13,6 @@ public interface ScrollApi {
 
     Retrofit retrofit = new Retrofit.Builder()
             .baseUrl("http://cinema.areas.su/")
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
+            .addConverterFactory(GsonConverterFactory.create())
+            .build();
 }
